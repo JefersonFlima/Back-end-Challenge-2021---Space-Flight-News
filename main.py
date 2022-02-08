@@ -11,7 +11,7 @@ app = FastAPI()
 def Raiz():
     return "Back-end Challenge 2021 🏅 - Space Flight News"
 
-# modelo
+# modelo dos dados
 class Artigos(BaseModel):
     id: int
     title: str
@@ -59,25 +59,25 @@ base_de_dados = [
       updatedAt= "2022-02-07T11:59:38.170Z"),
 ]
 
-# Rota ARTICLES
+# Rota com todos artigos
 @app.get("/Articles")
 def Articles():
     return base_de_dados
 
-# Rota Get Id
+# Procurar artigo pela ID
 @app.get("/articles/{id_user}")
 def Article_ID(id_user: int):
     for Artigos in base_de_dados:
            if(Artigos.id==id_user):
                  return Artigos
     return {"Status": 404,"Mensagem":"Usuario não encontrado"}
-# Rota novo artigo
+# Criar novo artigo
 @app.post("/Articles")
 def New_Article(artigo:Artigos):
     base_de_dados.append(artigo)
     return artigo
 
-# Rota deletar artigo
+# Deletar um artigo
 @app.delete("/articles/{id_user}")
 def Deletar_Article(id_user:int):
     for Artigos in base_de_dados:

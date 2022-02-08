@@ -11,4 +11,8 @@
 2º Instale o framework fastAPI em sua maquina através do terminal da IDE ou CMD com o comando "pip install fastapi" <br>
 3º Instale o Servidor uvicorn em sua maquina através do terminal da IDE ou CMD com o comando "pip install uvicorn" <br>
 4º Execute o comando "uvicorn main:app --reload" no terminal de sua IDE <br>
-5º Copie o endereço gerado,como por exemplo "http://127.0.0.1:8000" e adicione /docs no final,assime então "http://127.0.0.1:8000/docs" <br>
+5º Copie o endereço gerado,como por exemplo "http://127.0.0.1:8000" e adicione /docs no final,assime então "http://127.0.0.1:8000/docs" <br><br>
+
+Link para gravação: https://www.loom.com/share/e84fe33fc74f4a2189672c697f0e6543
+
+
